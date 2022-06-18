@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    }
+
+
+
+ $color-texto: black;
+ 
+ul{
+    list-style-type: none;
+    
+}
+
+
+
+
+
+.container-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    margin:15px;
+
+    }  
+
+ .container-tags{
+    height: 300px;
+    border:solid white;
+    overflow-y: scroll;    
+
+    }          
+
+    @media only screen and (max-width:767px){
+        aside{
+        display: none;
+       }
+    }  
+    
+    
+    
+    .bi  { 
+        > a{
+            text-decoration: none!important;
+        }
+        &:hover {
+            list-style-type: underline;
+            background-color: gray;
+            transition: 500ms;
+        }
+         
+    }
