@@ -5,13 +5,12 @@
 }
 .user-card-p1{
     height: 50px;
-    object-fit: scale-down;
     overflow: hidden;
     padding-top: 8px;
 
     & img{
         margin-left: 10px;
-        max-height: 58%;
+        max-height: 30px;
         border-radius: 50%;
     }
 }
@@ -20,15 +19,27 @@
     padding-top: 10px;
     border-bottom: none;
 }
-.user-card-text-p1{
+.user-story-text{
     align-self: baseline;
+    margin-left: 0.5rem!important;
     
 }
-.card-text-p1{
+.story-postdate-p1{
+    font-size: 12px;
+
+}
+.story-text-p1{
     border-bottom: none;
     padding-top: 3px;
     margin-left: 10px;
 }
+.story-title-p1{
+    font-size: 17px;
+}
+.story-reference-p1{
+    font-size: 13px;
+}
+
 .properties-icon-p1{
     width: 20px;
     height: 20px;
@@ -45,4 +56,8 @@
     display: inline-block;
     margin-left: 10px;
 }
- 
+.story-read-time-p1{
+    font-size: 10px;
+    margin-right: 5px;
+
+}
