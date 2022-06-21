@@ -1,0 +1,530 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside-icon-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+  height: 320px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 30px;
+  margin-top: 3rem;
+}
+
+#dot-img-button {
+  background-color: none;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  left: 0px;
+  top: 40px;
+}
+
+.left-aside {
+  width: 25vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F5F5F5;
+  z-index: 1;
+}
+
+.aside-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.aside-icon-container .dots-icon-hover {
+  opacity: 0;
+}
+
+.aside-icon-container .dots-icon {
+  opacity: .9;
+}
+
+.aside-icon-container .dots-icon, .aside-icon-container .dots-icon-hover {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.aside-icon-container .checkboxhider {
+  display: none;
+}
+
+.aside-icon-container .checkedlabel .aside-icon-default, .aside-icon-container .checkedlabel .aside-icon-hover {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.aside-icon-container .checkedlabel .aside-icon-hover {
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.aside-icon-container .checkedlabel .bigring {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: -35px;
+  top: -35px;
+}
+
+.aside-icon-container .checkedlabel .smallring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -ms-flex-item-align: center;
+      align-self: center;
+  left: 25px;
+  top: 25px;
+}
+
+.aside-icon-container .checkedlabel .aside-icon-cheked {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.aside-icon-container:hover .aside-icon-hover {
+  opacity: 1;
+}
+
+.checkboxhider:checked ~ .checkedlabel > .aside-icon-default, .checkboxhider:checked ~ .checkedlabel > .aside-icon-hover {
+  display: none;
+}
+
+.checkboxhider:checked ~ .checkedlabel > .aside-icon-cheked {
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+}
+
+.checkboxhider:checked ~ .checkedlabel > .bigring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: .6;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.checkboxhider:checked ~ .checkedlabel > .smallring {
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+}
+
+.checkboxhider:checked ~ .checkedlabel > .pop-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#unicorn, #heart, #save, #dots {
+  border-style: solid;
+  border-width: 2px;
+}
+
+#unicorn {
+  border-color: #199A6E;
+}
+
+#heart {
+  border-color: #DC1B26;
+}
+
+#save {
+  border-color: #44509E;
+}
+
+#dots {
+  border-color: black;
+}
+
+.dropdown-item, .dropdown-item-header {
+  border-radius: 30%;
+  margin: .5rem;
+  width: 100%;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.pop-menu-container {
+  background-color: white;
+  display: none;
+  position: absolute;
+  left: 130%;
+  top: 0%;
+  border-radius: 3%;
+  -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list #list-item:hover {
+  background-color: rgba(162, 167, 212, 0.4);
+  border-radius: 5%;
+  color: #3b49df;
+}
+
+.menu-list #list-header:hover {
+  border-radius: 5%;
+  color: #3b49df;
+}
+
+.list-menu-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  top: 15px;
+}
+
+#list-menu-icon, #list-menu-icon-hover {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+#list-menu-icon-hover {
+  opacity: 0;
+}
+
+#main-container {
+  width: 50vw;
+}
+
+.card-top {
+  background-color: white;
+  border-color: #3735365b;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.card-top #button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card-top #follow-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  height: 2.5rem;
+}
+
+.card-top .profile-description {
+  margin: 1rem;
+}
+
+.card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 3%;
+  border-color: #3735365b;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.card-bottom header {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+}
+
+#card-top-list {
+  padding: 1rem;
+}
+
+#card-top-list li {
+  list-style: none;
+}
+
+#blue-header {
+  background-color: blue;
+  height: 4rem;
+}
+
+#right-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  height: 100%;
+}
+
+#bottom-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  margin: 1rem;
+  border-top-color: lightgray;
+  color: #717171;
+  border-width: 1px;
+  border-top-style: solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/*   -----------------Aqui el SCSS de GIO------------*/
+.post-detail .card .card.mb-nutria {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.post-detail .card .card-text {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-detail .card .image-title .image-dev {
+  border-radius: 50%;
+  padding-left: 150px;
+}
+
+.post-detail .card .profile-name {
+  margin-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-detail .card .card-body {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-detail .card .card-title {
+  max-width: 750px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.post-detail .card .card-happy {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-aside {
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90vh;
+  }
+  #right-aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    height: 100%;
+  }
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside-icon-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10.1vh;
+    margin-top: 15px;
+  }
+  .counter {
+    left: 40px;
+    top: 10px;
+  }
+  .aside-icon-container {
+    height: 100%;
+  }
+  .pop-menu-container {
+    left: -300%;
+    top: -22rem;
+  }
+  .perrito {
+    width: 60vw;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-container {
+    width: 50vw;
+  }
+  .card-bottom, .card-top {
+    margin: .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
