@@ -99,6 +99,9 @@ header{
      btn-white{
       display:none;
     }
+    .aside-izq{
+        display: flex;
+    }
   }
   .icon-button {
     position: relative;
@@ -109,7 +112,7 @@ header{
       display:flex;
     }
   }
-  .aside-der{
+  .aside-izq{
     color: black;
   }
   .container-media {
@@ -125,7 +128,7 @@ header{
     overflow-y: scroll;
   }
   @media only screen and (max-width: 767px) {
-    .aside-der {
+    .aside-izq {
       display: none;
     }
   }
