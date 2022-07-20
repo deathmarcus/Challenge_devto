@@ -2,10 +2,9 @@ header {
   left: 0px;
   top: 0px;
   right: 0px;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid rgb(219, 219, 219);
   height: 56px;
 }
-
 header nav {
   background-color: aliceblue;
   width: 100%;
@@ -13,26 +12,14 @@ header nav {
   margin-left: auto;
   margin-right: auto;
   padding: 0px 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-
 header nav .left-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 header nav .burguer {
   cursor: pointer;
   border: none;
@@ -40,10 +27,7 @@ header nav .burguer {
   padding: 0;
   background-color: transparent;
 }
-
 header nav .burguer span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: black;
   height: 3px;
@@ -54,50 +38,41 @@ header nav .burguer span {
   top: 5px;
   left: 5px;
 }
-
 header nav .logo {
   max-width: 100%;
   width: 30px;
   height: 30px;
 }
-
 header nav .logo img {
   width: 100%;
 }
-
 header nav .centered-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header nav .centered-navigation .search input {
   border: none;
-  background-color: #efefef;
+  background-color: rgb(239, 239, 239);
   width: 100%;
   max-width: 420px;
   height: 40px;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   padding-left: 1rem;
   padding-right: 1rem;
   -o-object-fit: contain;
      object-fit: contain;
-  background: #efefef;
+  background: rgb(239, 239, 239);
   margin-left: 25px;
 }
-
 header nav .centered-navigation .search img {
   position: absolute;
   top: 52px;
   left: 335px;
 }
-
 header nav .centered-navigation .search .nav-actions ul > li {
   list-style: none;
   float: right;
   gap: 20px;
 }
-
 header nav .centered-navigation .search .nav-actions ul > li li a img {
   display: block;
   height: 36px;
@@ -106,53 +81,35 @@ header nav .centered-navigation .search .nav-actions ul > li li a img {
 
 @media only screen and (max-width: 425px) {
   nav .centered-navigation .btn-outline-primary .search {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 @media only screen and (min-width: 768px) {
   btn-white {
     display: none;
   }
   .aside-izq {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 .icon-button {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 @media only screen and (max-width: 768px) {
   .burguer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 .aside-izq {
   color: black;
 }
 
 .container-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   color: gray;
   margin: 15px;
 }
@@ -168,11 +125,8 @@ header nav .centered-navigation .search .nav-actions ul > li li a img {
     display: none;
   }
 }
-
 .bi:hover {
   list-style-type: underline;
-  background-color: #efefef;
-  -webkit-transition: 500ms;
+  background-color: rgb(239, 239, 239);
   transition: 500ms;
-}
-/*# sourceMappingURL=devto.css.map */
+}/*# sourceMappingURL=devto.css.map */

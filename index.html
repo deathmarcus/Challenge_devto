@@ -9,156 +9,112 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/devto.css">
-    <link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
     <title>Dev to</title>
 </head>
 
 <body>
     <main>
-        <!--Left aside section  and header (San)-->
-
-        <!--header-->
         <header>
-
-            <nav>
-                <div class="left-menu">
-                    <button class="burguer" type="button">
-                        <span class="1"></span>
-                        <span class="2"></span>
-                        <span class="3"></span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid elementos">
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a href="#">
-                        <img class="logo" src="/icons/logo.png" alt="logo">
-                    </a>
-                    <div class="centered-navigation">
-                        <div class="search">
-                            <input type="text">
-                            <img src="/icons/search.png" alt="search">
+                    <a class="navbar-brand" href="#" alt="logo"><img src="/icons/logo.png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="input-wrapper">
+                            <input type="search" class="input" placeholder="Search...">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd" />
+                            </svg>
                         </div>
                     </div>
+                    <div class="right-nav">
+                        <button type="button" class="btn btn-outline-primary nav-button">Create post</button>
+                        <a href="#"><img src="/icons/notifications.png" alt="" srcset="" class="p1_icon"></a>
+                        <a href="#"><img src="/images/29.jpg" alt="" srcset="" class="profile"></a>
+                    </div>
                 </div>
-                <div class="button">
-                    <button type="button" class="btn btn-outline-primary">Create Post</button>
-                </div>
-                <div class="nav-actions">
-                    <ul>
-                        <li><a href="#"><img src="/icons/notifications.png" />notification</a></li>
-                        <li><a href="#"><img src="/icons/profile.png" />profile</a></li>
-                    </ul>
-                </div>
+
+
 
             </nav>
         </header>
+        <!-- Inicio de offcanvas -->
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="container-home">
+                        <div class="list-group">
+
+                            <ul class="list-home">
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/home.png"
+                                            alt="" srcset=""> Home</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/icons/reading_list.png">
+                                        ReadingList</li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/listing.png">
+                                        Listings</a> </li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/podcasts.png">
+                                        Podcasts</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/videos.png">
+                                        Videos</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/tags.png">
+                                        Tags</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/faq.png">
+                                        FAQ</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/shop.png">
+                                        Forem Shop</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi">
+                                        <img src="/icons/sponsors.png">Sponsors
+                                    </a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi"><img src="/icons/about_new.png">
+                                        About</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/contact.png">
+                                        Contact</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/icons/guides_new.png">Guides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-others">
+                        <h5>Other</h5>
+                        <ul class="list-others">
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/icons/thumb_up.png"></img>Code ofConduct</a></li>
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/icons/policy.png"></img>Privacy Policy</a></li>
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/icons/eyes.png"></img>Terms
+                                    of Use</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-media">
+                        <ul class="menu-media">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-chat-left-text"></i></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="row main-wrapper">
-            <button class="btn burguer btn-outline-primary bg-secondary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                <span class="1"></span>
-                <span class="2"></span>
-                <span class="3"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">DEV Community</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-
-
-                    <!--aside navigation-->
-                    <aside class="aside" id="aside">
-                        <!--list navigation-->
-                        <div class="container-home">
-                            <div class="list-group">
-
-                                <ul class="list-home">
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/home.png"
-                                                alt="" srcset=""> Home</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/reading_list.png"> ReadingList</li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/listing.png"> Listings</a> </li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/podcasts.png"> Podcasts</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/videos.png"> Videos</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/tags.png">
-                                            Tags</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/faq.png">
-                                            FAQ</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img src="/icons/shop.png">
-                                            Forem Shop</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi">
-                                            <img src="/icons/sponsors.png">Sponsors
-                                        </a></li>
-                                    <li><a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/about_new.png"> About</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/contact.png"> Contact</a></li>
-                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
-                                                src="/icons/guides_new.png">Guides</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="container-others">
-                            <h5>Other</h5>
-                            <ul class="list-others">
-                                <li><a href="#" class="bi" style="text-decoration:none"><img
-                                            src="/icons/thumb_up.png"></img>Code ofConduct</a></li>
-                                <li><a href="#" class="bi" style="text-decoration:none"><img
-                                            src="/icons/policy.png"></img>Privacy Policy</a></li>
-                                <li><a href="#" class="bi" style="text-decoration:none"><img
-                                            src="/icons/eyes.png"></img>Terms of Use</a></li>
-                            </ul>
-                        </div>
-
-
-
-                        <!--list social media-->
-                        <div class="container-media">
-                            <ul class="menu-media">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-github"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-chat-left-text"></i></a>
-                            </ul>
-                        </div>
-                        <!--scroll-->
-                        <div class="container-tags">
-                            <h5>My Tags</h5>
-
-                            <ul class="list-tags">
-                                <li> <a href="#" style="text-decoration:none" class="bi">#devops</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#opensource</a> </li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#career</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#android</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#java</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#testing</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#linux</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#angular</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#laravel</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#git</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#dotnet</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#web3</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#ubuntu</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#gamedev</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#vscode</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#swift</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#npm</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#bash</a></li>
-                                <li><a href="#" style="text-decoration:none" class="bi">#scala</a></li>
-                            </ul>
-
-                        </div>
-                </div>
-            </div>
-            </aside>
-
             <aside class="aside col-md-3 col-lg-3 col-xl-3 col-xxl-3" id="aside">
                 <!--list navigation-->
                 <div class="container-home">
@@ -197,9 +153,11 @@
                     <h5>Other</h5>
                     <ul class="list-others">
                         <li><a href="#" class="bi" style="text-decoration:none"><img
-                                    src="/icons/thumb_up.png"></img>Code ofConduct</a></li>
+                                    src="/icons/thumb_up.png"></img>Code
+                                ofConduct</a></li>
                         <li><a href="#" class="bi" style="text-decoration:none"><img
-                                    src="/icons/policy.png"></img>Privacy Policy</a></li>
+                                    src="/icons/policy.png"></img>Privacy
+                                Policy</a></li>
                         <li><a href="#" class="bi" style="text-decoration:none"><img src="/icons/eyes.png"></img>Terms
                                 of Use</a></li>
                     </ul>

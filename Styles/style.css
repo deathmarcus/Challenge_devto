@@ -1,33 +1,92 @@
 @font-face {
-  font-family: 'Segoe UI Regular';
+  font-family: "Segoe UI Regular";
   font-style: normal;
   font-weight: normal;
   src: local("Segoe UI Regular"), url("Segoe UI.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Segoe UI Italic';
+  font-family: "Segoe UI Italic";
   font-style: normal;
   font-weight: normal;
   src: local("Segoe UI Italic"), url("Segoe UI Italic.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Segoe UI Bold';
+  font-family: "Segoe UI Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Segoe UI Bold"), url("Segoe UI Bold.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Segoe UI Bold Italic';
+  font-family: "Segoe UI Bold Italic";
   font-style: normal;
   font-weight: normal;
   src: local("Segoe UI Bold Italic"), url("Segoe UI Bold Italic.woff") format("woff");
 }
+nav {
+  margin: 0 auto;
+  height: 55px;
+  background-color: white;
+}
+
+.elementos {
+  max-width: 1250px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 430px;
+}
+
+.input {
+  box-sizing: border-box;
+  color: #dfdfdf;
+  padding: 15px 15px 15px 5px;
+  width: 100%;
+  border-radius: 8px;
+  height: 38px;
+  border: #8f8d8d solid;
+  border-width: thin;
+}
+
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-button {
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.p1_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
 
 body {
-  font-family: 'Segoe UI Regular';
+  font-family: "Segoe UI Regular";
   background-color: #F5F5F5;
 }
 
@@ -35,6 +94,10 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   padding-top: 30px;
+}
+
+.aside-izq {
+  color: black;
 }
 
 .p1 {
@@ -46,7 +109,6 @@ body {
   overflow: hidden;
   padding-top: 8px;
 }
-
 .user-card-p1 img {
   margin-left: 10px;
   max-height: 30px;
@@ -60,13 +122,12 @@ body {
 }
 
 .user-story-text-p1 {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  align-self: baseline;
   margin-left: 0.5rem !important;
 }
 
 .story-username-p1 {
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 500;
 }
 
@@ -95,12 +156,8 @@ body {
 }
 
 .card-bottom-p1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .bottom-right-p1 {
@@ -142,7 +199,7 @@ body {
 }
 
 .r-p1-card-text-heading {
-  font-family: 'Segoe UI Bold';
+  font-family: "Segoe UI Bold";
   line-height: 1.5;
   letter-spacing: 0.5px;
   font-size: 20px;
@@ -158,19 +215,16 @@ body {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .r-p1 {
     display: block;
   }
 }
-
 .link-aside {
   text-decoration: none;
-  font-family: 'Segoe UI Bold';
+  font-family: "Segoe UI Bold";
 }
 
 .card-p1-global a {
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -3,163 +3,247 @@
     font-style: normal;
     font-weight: normal;
     src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Segoe UI Italic';
     font-style: normal;
     font-weight: normal;
     src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Segoe UI Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+
+@font-face {
     font-family: 'Segoe UI Bold Italic';
     font-style: normal;
     font-weight: normal;
     src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+}
+nav {
+    margin: 0 auto;
+    height: 55px;
+    background-color: white;
+}
+
+.elementos {
+    max-width: 1250px;
+
+}
+
+.input-wrapper {
+    position: relative;
+    width: 430px;
+    
+}
+
+.input {
+    box-sizing: border-box;
+    color: #dfdfdf;
+    padding: 15px 15px 15px 5px;
+    width: 100%;
+    border-radius: 8px;
+    height: 38px;
+    border: #8f8d8d solid;
+    border-width: thin;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav-button {
+    text-align: center;
+}
+.navbar-brand {
+    & img {
+        width: 50px;
+        height: 50px;
     }
-    body{
-        font-family: 'Segoe UI Regular';
-        background-color: #F5F5F5;
-    }
-.main-wrapper{
+}
+.p1_icon{
+    width: 30px;
+    height: 30px;
+}
+.profile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+body {
+    font-family: 'Segoe UI Regular';
+    background-color: #F5F5F5;
+}
+
+.main-wrapper {
     margin: 0 auto;
     max-width: 1250px;
     padding-top: 30px;
 }
-
-.p1{
+.aside-izq{
+    color: black;
+  }
+.p1 {
     max-width: 100%;
 }
 
-.user-card-p1{
+.user-card-p1 {
     height: 50px;
     overflow: hidden;
     padding-top: 8px;
- 
 
-    & img{
+
+    & img {
         margin-left: 10px;
         max-height: 30px;
         border-radius: 50%;
-        
+
     }
 }
 
-.user-p1{
+.user-p1 {
     padding-bottom: 0;
     padding-top: 10px;
     border-bottom: none;
 }
-.user-story-text-p1{
+
+.user-story-text-p1 {
     align-self: baseline;
-    margin-left: 0.5rem!important; 
-  
-}
-.story-username-p1{
-    font-family: 'Segoe UI';
-    font-weight: 500;
-    
-    
+    margin-left: 0.5rem !important;
+
 }
 
-.story-postdate-p1{
+.story-username-p1 {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+
+
+}
+
+.story-postdate-p1 {
     font-size: 12px;
 }
-.story-text-p1{
+
+.story-text-p1 {
     border-bottom: none;
     padding-top: 3px;
     margin-left: 10px;
 }
-.story-title-p1{
+
+.story-title-p1 {
     font-size: 18px;
     letter-spacing: 1px;
 }
-.story-reference-p1{
+
+.story-reference-p1 {
     font-size: 13px;
 }
 
-.properties-icon-p1{
+.properties-icon-p1 {
     width: 20px;
     height: 20px;
 }
-.card-bottom-p1{
+
+.card-bottom-p1 {
     display: flex;
     justify-content: space-between;
 }
 
-.bottom-right-p1{
+.bottom-right-p1 {
     display: inline-block;
     margin-right: 20px;
 }
-.btn-sm{
+
+.btn-sm {
     background-color: #BDBDBD;
     color: #000000;
-    border:none
+    border: none
 }
-.bottom-left-p1{
+
+.bottom-left-p1 {
     display: inline-block;
     margin-left: 10px;
 }
-.story-read-time-p1{
+
+.story-read-time-p1 {
     font-size: 11px;
     margin-right: 5px;
 
 }
-.l-p1{
+
+.l-p1 {
     margin-left: auto;
 }
-.r-p1-card{
-    background-color:#FAFAFA;
+
+.r-p1-card {
+    background-color: #FAFAFA;
     border: none;
     margin-bottom: 10px;
-    
+
 }
-.r-p1-card-text{
+
+.r-p1-card-text {
     line-height: 1.5;
     font-style: normal;
     letter-spacing: 0.5px;
     border-bottom: solid 0.5px #F5F5F5;
 
 }
-.r-p1-card-text-heading{
+
+.r-p1-card-text-heading {
     font-family: 'Segoe UI Bold';
     line-height: 1.5;
     letter-spacing: 0.5px;
     font-size: 20px;
     border-bottom: solid 0.5px #F5F5F5;
-    
+
 }
-.r-p1{
+
+.r-p1 {
     display: none;
 }
-@media only screen and (max-width:768px){
-    .r-p1{
+
+@media only screen and (max-width:768px) {
+    .r-p1 {
         display: none;
     }
 }
-@media only screen and (min-width:1024px){
-    .r-p1{
+
+@media only screen and (min-width:1024px) {
+    .r-p1 {
         display: block;
     }
 }
-.link-aside{
+
+.link-aside {
     text-decoration: none;
     font-family: 'Segoe UI Bold';
-    
+
 }
-.card-p1-global{
-    a{
-    text-decoration: none;
-}
+
+.card-p1-global {
+    a {
+        text-decoration: none;
+    }
 }
